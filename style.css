@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Trebuchet MS',sans-serif;
+    background:#f5fff2;
+    color:#333;
+    line-height:1.8;
+}
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,100,0,.55),
+        rgba(0,100,0,.55)
+    ),
+    url("imagens/fundo-campo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+.logo-projeto{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.logo-projeto img{
+    width:180px;
+    height:auto;
+    filter:drop-shadow(0 5px 10px rgba(0,0,0,.3));
+}
+
+.logo-projeto span{
+    font-size:1.5rem;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    text-shadow:2px 2px 10px rgba(0,0,0,.4);
+}
+
+.subtitulo{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.secao,
+.linha-tempo,
+.tecnologia,
+.estatisticas,
+.sustentabilidade,
+.final{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.conteudo{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.texto,
+.imagem{
+    flex:1;
+}
+
+.texto{
+    font-size:1.1rem;
+}
+
+.imagem img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    transition:.4s;
+}
+
+.imagem img:hover{
+    transform:scale(1.03);
+}
+
+.secao-passado{
+    background:#fffef8;
+}
+
+.secao-futuro{
+    background:#eefaf0;
+}
+
+.linha-tempo{
+    background:#dff4ff;
+}
+
+.timeline{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.item{
+    background:white;
+    width:220px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.item span{
+    font-size:2rem;
+    font-weight:bold;
+    color:#2e7d32;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#e8f5e9;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.estatisticas{
+    background:#eef8ff;
+}
+
+.numeros{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.numero{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.numero h3{
+    font-size:3rem;
+}
+
+.frase{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.final{
+    background:linear-gradient(
+        to bottom,
+        #c8f7c5,
+        #f7fff4
+    );
+    text-align:center;
+}
+
+.final img{
+    width: 40%;
+    max-width:700px;
+    margin:30px 0;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+blockquote{
+    margin-top:30px;
+    font-size:1.7rem;
+    color:#1b5e20;
+    font-weight:bold;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    font-size:1.1rem;
+    line-height:1.8;
+    letter-spacing:0.5px;
+}
+
+.texto-timeline,
+.introducao-tecnologia,
+.campo-cidade{
+    max-width:1000px;
+    margin:40px auto 0;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.campo-cidade{
+    padding:80px 10%;
+    background:#f8fff8;
+}
+
+.campo-cidade p{
+    margin-bottom:20px;
+}
+
+.frase{
+    max-width:1000px;
+    margin:20px auto;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.creditos-ia{
+    padding:80px 10%;
+    background:#f3f8f3;
+    text-align:center;
+}
+
+.creditos-ia h2{
+    color:#2e7d32;
+    margin: 20px;
+}
+
+.creditos-ia p{
+    max-width:500px;
+    margin:15px auto;
+    font-size:1rem;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .logo-projeto img{
+        width:120px;
+    }
+
+    .logo-projeto span{
+        font-size:1rem;
+    }
+
+    .conteudo{
+        flex-direction:column;
+    }
+
+    .timeline{
+        flex-direction:column;
+        align-items:center;
+    }
+}
